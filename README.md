@@ -17,7 +17,10 @@ Projeto do bootcamp Impulso React Web Developer  recriando tela inicial do Netfl
 
 - Incluído rodapé 
 
+###### Interatividade dos botões
 
+- Adicionado links externos aos botões de assistir e informações
+- lincado menu de navegação com a sessão correspondente 
 
 ---
 
