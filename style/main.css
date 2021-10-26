@@ -1,0 +1,157 @@
+/*Opcional se quiser fazer declarações*/
+:root{/*aqui podemos utilizar váriaveis dentro do CSS3 declarando ela dentro do root que é a raiz do documento html*/
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*RESET CSS*//* 1º*/
+*{/*o asterisco "*"  se refere a todo o documento que esta sendo renderizado ali dentro*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*O limite de tudo vai ser a borda da caixa(container)*/
+}
+
+/*------------------------------*/
+/*ELEMTNOS BASES*/
+
+body{/*2º*/
+    background: var(--preta);/*usando a variavel declarada em ROOT*/
+    font-family: 'Arial', Times, serif;
+    color:white;
+}
+
+header .container{/*6º*/
+    display: flex;/*Sempre que usamos o display:flex ele jogar tudo em linha*/
+    flex-direction: row;/*valor row padrão(mesmo não usando a propriedade de cima já usa ela*/
+    align-items: center;/*alinhando itens ao meio da linha na vertical*/
+    justify-content: space-between;/* | justifica o elemento horizontalmente*/
+}
+
+header .logo{/*Estilizando a LOGO*//*3º*/
+    color: var(--vermelho);/*usando a variavel declarada em ROOT*/
+    font-family: 'arial black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+
+}
+
+header nav a{/*Estilizando Link da navegação*//*4º*/
+    text-decoration: none;/*Removi o sublinhado do texto*/
+    color: #AAA;
+    margin-right: 10px;
+
+}
+/*Abaixo criando um efeito para qd passar mouse em cima do elemento*/
+header nav a:hover{/*5º*/
+    color: #fff;
+}
+
+/*-------------------FILME PRINCIPAL-----------------*/
+
+.filme-principal{/*Div*/
+    font-size: 16px;
+    /*liner-gradient:cria uma camada fina em cima da IMG(background) melhorando contraste*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/spider-capa-3.jpg');/*url()Usar IMG como fundo*//*linear-gradient:rgba(cor1),rgba(cor2)seguido da % da propriedade*/
+    height: 600px;
+
+    background-size:cover;/*Define tamanho para IMG usada como background*/
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;/*usando a margin para distanciar a descrição dos botões*/
+    margin-left: 25px;
+}
+
+.titulo-filme-principal{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15%;
+    margin-left: 25px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none; 
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    margin-left: 25px;
+    cursor: pointer;/*efeito mouse sobre o botão*/
+    transition: .3s ease all;/*efeito destacar o botão*/
+}
+
+.botao:hover{/*efeito para mudar cor do botão quando passar mouse sobre ele*/
+    background-color: white;/*a cor do efeito*/
+    color: black;/*cor sem efeito*/
+
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+
+.container h2{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;/*definindo uma largura pra titulo, descrição e botões*/
+    margin-left: 20px;
+}
+
+/*-----------------------------------------*/
+/*Carrosel*/
+.box-filme .box-series .box-animes .box-documentarios{
+    height: 100%;
+    width: 100%;
+    display: block;  
+    cursor: pointer;      
+    
+}
+
+
+.carrosel-filmes{
+    margin-top: 15px;
+}
+
+
+.categoria{
+    background-color: (rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%);
+}
+
+.categoria h1{
+/*    margin: 5px 15px;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer{
+    display: flex;    
+    margin: 10px auto;
+    justify-content: center;
+
+
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 300px;
+    margin: 5px auto;    
+}
+

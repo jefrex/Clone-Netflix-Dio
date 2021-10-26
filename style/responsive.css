@@ -1,0 +1,54 @@
+
+@media screen and (max-width: 360px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }   
+
+    .navegacao {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+
+    }
+    .filme-principal{
+        margin-top: 10px;
+        
+    }
+
+    .filme-principal .container{
+        margin-left: 10px;
+    }
+
+    .categoria{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+/*Regra  Tela   e  (largura maxima) */    
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }   
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    .filme-principal{
+        margin-top: 10px;
+    }
+    .titulo-filme-principal{
+        font-size: 25px;
+    }
+}
+
+@media  and (min-width 1000px) {
+    .descricao{
+        width: 50%;
+    }
+    
+}
