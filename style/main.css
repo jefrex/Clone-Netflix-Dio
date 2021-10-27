@@ -95,11 +95,11 @@ header nav a:hover{/*5º*/
     color: black;/*cor sem efeito*/
 }
 
-a:hover {
+.botao:hover a{
     color: black;
 }
 
-a{
+.botao a{
     font-family: arial black;
     text-decoration: none;
     color: white;
