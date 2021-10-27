@@ -93,7 +93,16 @@ header nav a:hover{/*5º*/
 .botao:hover{/*efeito para mudar cor do botão quando passar mouse sobre ele*/
     background-color: white;/*a cor do efeito*/
     color: black;/*cor sem efeito*/
+}
 
+a:hover {
+    color: black;
+}
+
+a{
+    font-family: arial black;
+    text-decoration: none;
+    color: white;
 }
 
 .botao i{
